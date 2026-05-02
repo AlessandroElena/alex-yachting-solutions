@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Alex Yachting Solutions</title>
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #0b1c2c;
+    color: white;
+}
+
+header {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(to right, #0b1c2c, #123b5a);
+}
+
+header h1 {
+    font-size: 48px;
+    margin: 0;
+}
+
+header p {
+    font-size: 18px;
+    margin-top: 10px;
+    color: #ccc;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background: #1da1f2;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.card {
+    background: #122b40;
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #091520;
+    font-size: 14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>ALEX YACHTING SOLUTIONS</h1>
+    <p>Detailing • Fiberglass • Custom Marine Work</p>
+    <a href="https://instagram.com" class="btn">Contact Me</a>
+</header>
+
+<section>
+    <h2>Services</h2>
+    <div class="services">
+        <div class="card">
+            <h3>Detailing</h3>
+            <p>Wash, polish, gelcoat restoration & ceramic coating</p>
+        </div>
+        <div class="card">
+            <h3>Fiberglass</h3>
+            <p>Repairs, cracks, structural fixes</p>
+        </div>
+        <div class="card">
+            <h3>Custom Work</h3>
+            <p>Seats, storage, wood & resin builds</p>
+        </div>
+    </div>
+</section>
+
+<section>
+    <h2>Why Choose Me</h2>
+    <p>Real experience in shipyards and yachts. I don’t just clean — I restore and protect.</p>
+</section>
+
+<footer>
+    <p>Sunshine Coast, Australia | Alex Yachting Solutions</p>
+</footer>
+
+</body>
+</html>

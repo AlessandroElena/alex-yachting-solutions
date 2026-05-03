@@ -8,36 +8,43 @@
 <style>
 body {
     margin: 0;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
+    font-family: Arial, sans-serif;
     background: #ffffff;
     color: #0b1c2c;
 }
 
 /* HERO */
 .hero {
-    height: 90vh;
-    background: linear-gradient(rgba(255,255,255,0.85), rgba(255,255,255,0.95)),
+    height: 70vh;
+    background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.95)),
                 url('hero.jpg') center/cover no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 20px;
 }
 
-.hero img {
-    width: 130px;
+.logo {
+    width: 160px;
     margin-bottom: 15px;
 }
 
 .hero h1 {
-    font-size: 42px;
+    font-size: 38px;
     margin: 0;
 }
 
-.hero p {
+.tagline {
     color: #2c5d87;
-    margin: 5px 0;
+    font-size: 18px;
+    margin-top: 8px;
+}
+
+.sub {
+    font-size: 14px;
+    color: #5f7f9a;
 }
 
 .btn {
@@ -75,10 +82,10 @@ h2 {
 }
 
 .card {
-    border: 1px solid #dbe5ef;
+    border: 1px solid #e0e8f0;
     padding: 25px;
     border-radius: 10px;
-    background: #f7fbff;
+    background: #f8fbff;
 }
 
 /* GALLERY */
@@ -90,6 +97,8 @@ h2 {
 
 .gallery img {
     width: 300px;
+    height: 200px;
+    object-fit: cover;
     margin: 10px;
     border-radius: 8px;
 }
@@ -98,14 +107,16 @@ h2 {
 .premium {
     background: #0b1c2c;
     color: white;
+    padding: 60px 20px;
 }
 
 /* FOOTER */
 footer {
-    padding: 30px;
     background: #0b1c2c;
     color: white;
+    padding: 30px;
     text-align: center;
+    font-size: 14px;
 }
 </style>
 </head>
@@ -114,12 +125,15 @@ footer {
 
 <!-- HERO -->
 <div class="hero">
-    <img src="logo.png" alt="Logo">
-    <h1>ALEX YACHTING SOLUTIONS</h1>
-    <p>Premium Yacht Detailing & Marine Solutions</p>
-    <p>Detailing • Fiberglass • Custom • Maintenance</p>
+    <img src="logo.jpg" class="logo" alt="Logo">
 
-    <a href="https://instagram.com/tuoprofilo" class="btn">Get a Quote</a>
+    <h1>ALEX YACHTING SOLUTIONS</h1>
+
+    <p class="tagline">Premium Yacht Detailing & Marine Solutions</p>
+
+    <p class="sub">Detailing • Fiberglass • Custom • Maintenance</p>
+
+    <a href="https://wa.me/..." class="btn">Get a Quote</a>
 </div>
 
 <!-- SERVICES -->
@@ -144,7 +158,7 @@ Ceramic Coating
 Crack Repairs<br>
 Osmosis Treatment<br>
 Structural Repairs<br>
-Fiberglass Rebuilds
+Rebuilds
 </p>
 </div>
 
@@ -152,55 +166,50 @@ Fiberglass Rebuilds
 <h3>Custom Fabrication</h3>
 <p>
 Cabins & Enclosures<br>
-Seating & Stools<br>
-Storage Solutions<br>
+Seating & Storage<br>
 Wood & Resin Work
 </p>
 </div>
 
 <div class="card">
-<h3>Maintenance & Installations</h3>
+<h3>Maintenance & Install</h3>
 <p>
 Refit Support<br>
-Accessories Installation<br>
-Upgrades & Fittings<br>
-Quick Fix Services
+Accessories Install<br>
+Upgrades & Fixes
 </p>
 </div>
 
 <div class="card">
-<h3>Teak & Exterior Care</h3>
+<h3>Teak Care</h3>
 <p>
-Teak Cleaning<br>
+Cleaning<br>
 Restoration<br>
-Sealing Protection
+Sealing
 </p>
 </div>
 
 <div class="card">
-<h3>Metal & Finishing</h3>
+<h3>Metal & Finish</h3>
 <p>
 Stainless Polishing<br>
-Inox Restoration<br>
-Surface Finishing
+Inox Restoration
 </p>
 </div>
 
 <div class="card">
 <h3>Maintenance Packages</h3>
 <p>
-Regular Yacht Care<br>
-Scheduled Maintenance<br>
-Peace of Mind Service
+Regular Care<br>
+Scheduled Visits
 </p>
 </div>
 
 <div class="card">
-<h3>Quick Solutions</h3>
+<h3>Quick Jobs</h3>
 <p>
-Small Jobs<br>
-Fast Turnaround<br>
-High Impact Results
+Small Repairs<br>
+Fast Turnaround
 </p>
 </div>
 
@@ -224,17 +233,17 @@ High Impact Results
 <h2>Premium Products Only</h2>
 
 <p>
-We work exclusively with industry-leading marine systems:
+We work only with top-tier marine systems:
 </p>
 
 <p>
-✔ Awlgrip (Full System)<br>
-✔ International Marine Coatings<br>
-✔ 3M Professional Marine Range
+Awlgrip (Full System)<br>
+International Marine Coatings<br>
+3M Professional Marine Range
 </p>
 
 <p>
-Ensuring long-lasting protection, durability and high-end finishes.
+Ensuring long-lasting protection and high-end finishes.
 </p>
 </section>
 
@@ -243,7 +252,7 @@ Ensuring long-lasting protection, durability and high-end finishes.
 <h2>Big Projects 2025 / 2026</h2>
 
 <p>
-Currently involved in large-scale yacht refit and maintenance projects across international waters.
+Currently involved in large-scale yacht refit and maintenance projects.
 </p>
 
 <p><em>Full portfolio coming soon.</em></p>
@@ -254,8 +263,8 @@ Currently involved in large-scale yacht refit and maintenance projects across in
 <h2>Why Choose Alex</h2>
 
 <p>
-Real shipyard experience combined with hands-on yacht work.<br>
-Focused on quality, durability and premium finishes.
+Real shipyard experience + yacht work.<br>
+Focused on quality, durability and clean results.
 </p>
 </section>
 

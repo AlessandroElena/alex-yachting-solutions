@@ -15,8 +15,8 @@ body {
 
 /* HERO */
 .hero {
-    height: 85vh;
-    background: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.9)),
+    height: 80vh;
+    background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.65)),
                 url('hero.jpg') center/cover no-repeat;
     display: flex;
     flex-direction: column;
@@ -24,30 +24,31 @@ body {
     align-items: center;
     text-align: center;
     padding: 20px;
+    color: white;
 }
 
 .hero h1 {
-    font-size: 48px;
+    font-size: 46px;
     margin: 0;
     letter-spacing: 1px;
 }
 
 .tagline {
-    color: #2c5d87;
     font-size: 20px;
     margin-top: 10px;
+    color: #cfe6ff;
 }
 
 .sub {
-    font-size: 15px;
-    color: #5f7f9a;
+    font-size: 14px;
+    color: #d0dbe6;
 }
 
 .btn {
     margin-top: 30px;
     padding: 14px 34px;
-    border: 2px solid #2c5d87;
-    color: #2c5d87;
+    border: 2px solid white;
+    color: white;
     text-decoration: none;
     font-weight: bold;
     border-radius: 6px;
@@ -55,8 +56,8 @@ body {
 }
 
 .btn:hover {
-    background: #2c5d87;
-    color: white;
+    background: white;
+    color: #0b1c2c;
 }
 
 /* SECTIONS */
@@ -84,12 +85,16 @@ h2 {
     padding: 25px;
     border-radius: 10px;
     background: #f9fcff;
-    transition: 0.3s;
+    text-align: left;
 }
 
-.card:hover {
-    transform: translateY(-5px);
-    border-color: #2c5d87;
+.card h3 {
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    line-height: 1.6;
 }
 
 /* GALLERY */
@@ -111,6 +116,13 @@ h2 {
 .premium {
     background: #0b1c2c;
     color: white;
+    padding: 70px 20px;
+}
+
+.premium p {
+    max-width: 600px;
+    margin: 10px auto;
+    line-height: 1.6;
 }
 
 /* FOOTER */
@@ -119,12 +131,6 @@ footer {
     background: #0b1c2c;
     color: white;
     text-align: center;
-}
-
-.footer-logo {
-    width: 80px;
-    opacity: 0.8;
-    margin-bottom: 15px;
 }
 </style>
 </head>
@@ -137,7 +143,7 @@ footer {
 
     <p class="tagline">Premium Yacht Detailing & Marine Solutions</p>
 
-    <p class="sub">Detailing • Fiberglass • Custom • Maintenance</p>
+    <p class="sub">Detailing • Fiberglass • Custom Fabrication • Maintenance</p>
 
     <a href="https://wa.me/..." class="btn">Get a Quote</a>
 </div>
@@ -150,32 +156,58 @@ footer {
 
 <div class="card">
 <h3>Detailing & Protection</h3>
-<p>Wash, polish, gelcoat restoration and ceramic coating.</p>
+<p>
+Full exterior and interior yacht detailing including wash, cut & polish, gelcoat restoration and long-term ceramic protection systems.
+</p>
 </div>
 
 <div class="card">
-<h3>Fiberglass & Repairs</h3>
-<p>Cracks, osmosis and structural repairs.</p>
+<h3>Fiberglass & Gelcoat Repairs</h3>
+<p>
+Professional repair of cracks, chips, osmosis treatment and structural fiberglass work with high-end finishing.
+</p>
 </div>
 
 <div class="card">
 <h3>Custom Fabrication</h3>
-<p>Cabins, seating, storage and resin work.</p>
+<p>
+Custom marine builds including cabins, seating, storage solutions and bespoke wood & resin components.
+</p>
 </div>
 
 <div class="card">
-<h3>Maintenance & Install</h3>
-<p>Refit support, installs and upgrades.</p>
+<h3>Maintenance & Installations</h3>
+<p>
+Refit support, hardware installation, upgrades and on-site problem solving for all marine systems.
+</p>
 </div>
 
 <div class="card">
 <h3>Teak Care</h3>
-<p>Cleaning, restoration and sealing.</p>
+<p>
+Teak cleaning, restoration and sealing to preserve durability and premium appearance.
+</p>
 </div>
 
 <div class="card">
-<h3>Metal Work</h3>
-<p>Stainless polishing and inox restoration.</p>
+<h3>Metal & Finishing Work</h3>
+<p>
+Stainless steel polishing, inox restoration and surface finishing for a clean and high-end look.
+</p>
+</div>
+
+<div class="card">
+<h3>Maintenance Packages</h3>
+<p>
+Scheduled yacht care programs ensuring consistent performance, protection and peace of mind.
+</p>
+</div>
+
+<div class="card">
+<h3>Quick Solutions</h3>
+<p>
+Fast-response small jobs with high impact results — ideal for urgent fixes and finishing touches.
+</p>
 </div>
 
 </div>
@@ -193,16 +225,20 @@ footer {
 
 </section>
 
-<!-- PREMIUM -->
+<!-- PREMIUM PRODUCTS -->
 <section class="premium">
 <h2>Premium Products Only</h2>
 
 <p>
-Awlgrip • International • 3M
+We work exclusively with industry-leading marine systems to guarantee durability and top-level finishes.
 </p>
 
 <p>
-Top-tier marine systems for long-lasting and high-end finishes.
+Awlgrip (Full Coating System) • International Marine Coatings • 3M Professional Marine Range
+</p>
+
+<p>
+Using only proven products ensures long-lasting protection, resistance to harsh marine environments and a superior final result.
 </p>
 </section>
 
@@ -211,33 +247,17 @@ Top-tier marine systems for long-lasting and high-end finishes.
 <h2>Big Projects 2025 / 2026</h2>
 
 <p>
-Currently involved in large-scale yacht refit and maintenance projects.
+Currently involved in large-scale yacht refit and maintenance projects across international waters.
 </p>
 
 <p><em>Full portfolio coming soon.</em></p>
 </section>
 
-<!-- WHY -->
-<section>
-<h2>Why Choose Alex</h2>
-
-<p>
-Shipyard experience combined with hands-on yacht work.<br>
-Focused on clean, durable and premium results.
-</p>
-</section>
-
 <!-- FOOTER -->
 <footer>
-
-<!-- OPTIONAL LOGO -->
-<!-- mettilo solo se è pulito -->
-<img src="logo.png" class="footer-logo">
-
 <p>Sunshine Coast • Brisbane • Gold Coast</p>
 <p>ABN: 84818053903</p>
 <p>Alex Yachting Solutions</p>
-
 </footer>
 
 </body>

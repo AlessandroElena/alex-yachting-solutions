@@ -8,15 +8,15 @@
 <style>
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: #050a0f;
-    color: #e6edf3;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background: #ffffff;
+    color: #0b1c2c;
 }
 
 /* HERO */
 .hero {
-    height: 80vh;
-    background: linear-gradient(rgba(5,10,15,0.7), rgba(5,10,15,0.9)),
+    height: 85vh;
+    background: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.9)),
                 url('hero.jpg') center/cover no-repeat;
     display: flex;
     flex-direction: column;
@@ -26,40 +26,36 @@ body {
     padding: 20px;
 }
 
-.logo {
-    width: 180px;
-    margin-bottom: 20px;
-}
-
 .hero h1 {
-    font-size: 44px;
+    font-size: 48px;
     margin: 0;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
 }
 
 .tagline {
-    color: #9fb3c8;
-    font-size: 18px;
+    color: #2c5d87;
+    font-size: 20px;
     margin-top: 10px;
 }
 
 .sub {
-    font-size: 14px;
-    color: #6c7a89;
+    font-size: 15px;
+    color: #5f7f9a;
 }
 
 .btn {
-    margin-top: 25px;
-    padding: 14px 32px;
-    border: 1px solid #1da1f2;
-    color: #1da1f2;
+    margin-top: 30px;
+    padding: 14px 34px;
+    border: 2px solid #2c5d87;
+    color: #2c5d87;
     text-decoration: none;
     font-weight: bold;
+    border-radius: 6px;
     transition: 0.3s;
 }
 
 .btn:hover {
-    background: #1da1f2;
+    background: #2c5d87;
     color: white;
 }
 
@@ -71,27 +67,29 @@ section {
 
 h2 {
     margin-bottom: 40px;
+    font-size: 28px;
 }
 
 /* SERVICES */
 .services {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 25px;
     max-width: 1100px;
     margin: auto;
 }
 
 .card {
-    background: #0c1620;
-    border: 1px solid #1c2a36;
+    border: 1px solid #e4ecf3;
     padding: 25px;
+    border-radius: 10px;
+    background: #f9fcff;
     transition: 0.3s;
 }
 
 .card:hover {
-    border-color: #1da1f2;
     transform: translateY(-5px);
+    border-color: #2c5d87;
 }
 
 /* GALLERY */
@@ -106,20 +104,27 @@ h2 {
     height: 220px;
     object-fit: cover;
     margin: 10px;
+    border-radius: 8px;
 }
 
 /* PREMIUM */
 .premium {
-    background: #0c1620;
+    background: #0b1c2c;
+    color: white;
 }
 
 /* FOOTER */
 footer {
-    padding: 30px;
+    padding: 40px 20px;
+    background: #0b1c2c;
+    color: white;
     text-align: center;
-    font-size: 14px;
-    color: #6c7a89;
-    border-top: 1px solid #1c2a36;
+}
+
+.footer-logo {
+    width: 80px;
+    opacity: 0.8;
+    margin-bottom: 15px;
 }
 </style>
 </head>
@@ -128,8 +133,6 @@ footer {
 
 <!-- HERO -->
 <div class="hero">
-    <img src="logo.jpg" class="logo">
-
     <h1>ALEX YACHTING SOLUTIONS</h1>
 
     <p class="tagline">Premium Yacht Detailing & Marine Solutions</p>
@@ -141,38 +144,38 @@ footer {
 
 <!-- SERVICES -->
 <section>
-<h2>Services</h2>
+<h2>Our Services</h2>
 
 <div class="services">
 
 <div class="card">
-<h3>Detailing</h3>
-<p>Wash • Polish • Gelcoat • Ceramic</p>
+<h3>Detailing & Protection</h3>
+<p>Wash, polish, gelcoat restoration and ceramic coating.</p>
 </div>
 
 <div class="card">
-<h3>Fiberglass</h3>
-<p>Repairs • Cracks • Osmosis • Rebuilds</p>
+<h3>Fiberglass & Repairs</h3>
+<p>Cracks, osmosis and structural repairs.</p>
 </div>
 
 <div class="card">
-<h3>Custom Work</h3>
-<p>Cabins • Seating • Storage • Resin</p>
+<h3>Custom Fabrication</h3>
+<p>Cabins, seating, storage and resin work.</p>
 </div>
 
 <div class="card">
-<h3>Maintenance</h3>
-<p>Refit • Install • Upgrades • Fix</p>
+<h3>Maintenance & Install</h3>
+<p>Refit support, installs and upgrades.</p>
 </div>
 
 <div class="card">
 <h3>Teak Care</h3>
-<p>Cleaning • Restore • Seal</p>
+<p>Cleaning, restoration and sealing.</p>
 </div>
 
 <div class="card">
 <h3>Metal Work</h3>
-<p>Polishing • Inox Restore</p>
+<p>Stainless polishing and inox restoration.</p>
 </div>
 
 </div>
@@ -183,9 +186,9 @@ footer {
 <h2>Selected Work</h2>
 
 <div class="gallery">
-<img src="photo1.jpg">
-<img src="photo2.jpg">
-<img src="photo3.jpg">
+    <img src="photo1.jpg">
+    <img src="photo2.jpg">
+    <img src="photo3.jpg">
 </div>
 
 </section>
@@ -199,15 +202,42 @@ Awlgrip • International • 3M
 </p>
 
 <p>
-Professional systems for long-lasting and high-end finishes.
+Top-tier marine systems for long-lasting and high-end finishes.
+</p>
+</section>
+
+<!-- PROJECTS -->
+<section>
+<h2>Big Projects 2025 / 2026</h2>
+
+<p>
+Currently involved in large-scale yacht refit and maintenance projects.
+</p>
+
+<p><em>Full portfolio coming soon.</em></p>
+</section>
+
+<!-- WHY -->
+<section>
+<h2>Why Choose Alex</h2>
+
+<p>
+Shipyard experience combined with hands-on yacht work.<br>
+Focused on clean, durable and premium results.
 </p>
 </section>
 
 <!-- FOOTER -->
 <footer>
+
+<!-- OPTIONAL LOGO -->
+<!-- mettilo solo se è pulito -->
+<img src="logo.png" class="footer-logo">
+
 <p>Sunshine Coast • Brisbane • Gold Coast</p>
 <p>ABN: 84818053903</p>
 <p>Alex Yachting Solutions</p>
+
 </footer>
 
 </body>

@@ -5,20 +5,18 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Alex Yachting Solutions</title>
 
-    <p>Premium Yacht Detailing & Marine Solutions</p>
-
 <style>
 body {
     margin: 0;
     font-family: 'Helvetica Neue', Arial, sans-serif;
-    background: #050a0f;
-    color: #e6edf3;
+    background: #ffffff;
+    color: #0b1c2c;
 }
 
 /* HERO */
 .hero {
-    height: 100vh;
-    background: linear-gradient(rgba(5,10,15,0.7), rgba(5,10,15,0.9)),
+    height: 90vh;
+    background: linear-gradient(rgba(255,255,255,0.8), rgba(255,255,255,0.95)),
                 url('hero.jpg') center/cover no-repeat;
     display: flex;
     flex-direction: column;
@@ -33,98 +31,70 @@ body {
 }
 
 .hero h1 {
-    font-size: 48px;
-    letter-spacing: 2px;
+    font-size: 42px;
     margin: 0;
 }
 
 .hero p {
-    font-size: 18px;
-    color: #9fb3c8;
-    margin-top: 10px;
+    color: #2c5d87;
 }
 
 .btn {
-    margin-top: 30px;
-    padding: 14px 30px;
-    border: 1px solid #1da1f2;
-    color: #1da1f2;
+    margin-top: 20px;
+    padding: 12px 28px;
+    border: 2px solid #2c5d87;
+    color: #2c5d87;
     text-decoration: none;
-    transition: 0.3s;
+    font-weight: bold;
 }
 
 .btn:hover {
-    background: #1da1f2;
-    color: #fff;
+    background: #2c5d87;
+    color: white;
 }
 
 /* SECTIONS */
 section {
-    padding: 80px 20px;
+    padding: 60px 20px;
     text-align: center;
 }
 
 h2 {
-    font-size: 28px;
-    margin-bottom: 40px;
-    letter-spacing: 1px;
+    margin-bottom: 30px;
 }
 
-/* SERVICES */
+/* SERVICES GRID */
 .services {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 30px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
 }
 
 .card {
-    background: #0c1620;
-    border: 1px solid #1c2a36;
-    padding: 30px;
-    width: 260px;
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    border-color: #1da1f2;
+    border: 1px solid #dbe5ef;
+    padding: 20px;
+    border-radius: 10px;
+    background: #f7fbff;
 }
 
 /* GALLERY */
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
-
 .gallery img {
-    width: 320px;
-    height: 220px;
-    object-fit: cover;
-    filter: brightness(0.9);
-    transition: 0.3s;
+    width: 300px;
+    margin: 10px;
+    border-radius: 8px;
 }
 
-.gallery img:hover {
-    filter: brightness(1.1);
+/* PREMIUM */
+.premium {
+    background: #0b1c2c;
+    color: white;
+    padding: 60px 20px;
 }
 
-/* PROJECTS */
-.projects {
-    max-width: 700px;
-    margin: auto;
-    color: #9fb3c8;
-}
-
-/* FOOTER */
 footer {
-    padding: 30px;
-    text-align: center;
-    font-size: 14px;
-    color: #6c7a89;
-    border-top: 1px solid #1c2a36;
+    padding: 20px;
+    background: #0b1c2c;
+    color: white;
 }
 </style>
 </head>
@@ -133,9 +103,9 @@ footer {
 
 <!-- HERO -->
 <div class="hero">
-    <img src="logo.png" alt="Logo">
+    <img src="logo.png">
     <h1>ALEX YACHTING SOLUTIONS</h1>
-    <p>Detailing • Fiberglass • Custom Marine Work</p>
+    <p>Premium Yacht Detailing & Marine Solutions</p>
     <p><strong>ABN: 84818053903</strong></p>
 
     <a href="https://instagram.com/tuoprofilo" class="btn">Contact</a>
@@ -143,64 +113,139 @@ footer {
 
 <!-- SERVICES -->
 <section>
-    <h2>Services</h2>
+<h2>Services</h2>
 
-    <div class="services">
-        <div class="card">
-            <h3>Detailing</h3>
-            <p>Premium wash, polish, gelcoat restoration and ceramic protection.</p>
-        </div>
+<div class="services">
 
-        <div class="card">
-            <h3>Fiberglass</h3>
-            <p>Structural repairs, cracks, and gelcoat restoration.</p>
-        </div>
+<div class="card">
+<h3>Detailing & Protection</h3>
+<p>
+Wash & Maintenance<br>
+Cut, Polish & Wax<br>
+Gelcoat Restoration<br>
+Ceramic Coating
+</p>
+</div>
 
-        <div class="card">
-            <h3>Custom Work</h3>
-            <p>Hand-built marine solutions in wood and resin.</p>
-        </div>
-    </div>
+<div class="card">
+<h3>Fiberglass & Resin</h3>
+<p>
+Gelcoat Repairs<br>
+Cracks & Osmosis<br>
+Structural Repairs<br>
+Fiberglass Rebuilds
+</p>
+</div>
+
+<div class="card">
+<h3>Custom Builds</h3>
+<p>
+Cabins & Enclosures<br>
+Stools & Seating<br>
+Storage & Boxes<br>
+Wood & Resin Work
+</p>
+</div>
+
+<div class="card">
+<h3>Maintenance & Install</h3>
+<p>
+Refit Support<br>
+Accessories Installation<br>
+Upgrades & Fittings<br>
+Quick Fix Service
+</p>
+</div>
+
+<div class="card">
+<h3>Teak Care</h3>
+<p>
+Cleaning<br>
+Restoration<br>
+Sealing
+</p>
+</div>
+
+<div class="card">
+<h3>Metal & Finish</h3>
+<p>
+Stainless Polishing<br>
+Inox Restoration
+</p>
+</div>
+
+<div class="card">
+<h3>Maintenance Packages</h3>
+<p>
+Regular Care<br>
+Peace of Mind
+</p>
+</div>
+
+<div class="card">
+<h3>Quick Solutions</h3>
+<p>
+Small Jobs<br>
+Big Results
+</p>
+</div>
+
+</div>
 </section>
 
 <!-- GALLERY -->
 <section>
-    <h2>Selected Work</h2>
+<h2>Selected Work</h2>
 
-    <div class="gallery">
-        <img src="photo1.jpg">
-        <img src="photo2.jpg">
-        <img src="photo3.jpg">
-    </div>
+<img src="photo1.jpg">
+<img src="photo2.jpg">
+<img src="photo3.jpg">
+
+</section>
+
+<!-- PREMIUM PRODUCTS -->
+<section class="premium">
+<h2>Premium Products Only</h2>
+
+<p>
+We work exclusively with industry-leading marine products:
+</p>
+
+<p>
+✔ Awlgrip (Full System)<br>
+✔ International Marine Coatings<br>
+✔ 3M Professional Marine Range
+</p>
+
+<p>
+Ensuring long-lasting protection, high-end finishes and professional results.
+</p>
 </section>
 
 <!-- PROJECTS -->
 <section>
-    <h2>Big Projects 2025 / 2026</h2>
+<h2>Big Projects 2025 / 2026</h2>
 
-    <div class="projects">
-        <p>
-        Currently involved in large-scale yacht refit and maintenance projects across international waters.
-        </p>
+<p>
+Currently involved in large-scale yacht refit and maintenance projects across international waters.
+</p>
 
-        <p><em>Full portfolio coming soon.</em></p>
-    </div>
+<p><em>Full portfolio coming soon.</em></p>
 </section>
 
 <!-- WHY -->
 <section>
-    <h2>Why Choose</h2>
-    <p class="projects">
-        <p>
-Worked on large yachts and shipyard environments.  
-Focused on high-end finishes and long-term protection.
-    </p>
+<h2>Why Choose Alex</h2>
+
+<p>
+Real shipyard experience combined with hands-on yacht work.<br>
+Focused on quality, durability and premium finishes.
+</p>
 </section>
 
-<!-- FOOTER -->
 <footer>
-    <p>Sunshine Coast, Australia</p>
-    <p>Alex Yachting Solutions</p>
+<p>Sunshine Coast, Australia</p>
+<p>Alex Yachting Solutions</p>
 </footer>
 
 </body>

@@ -1,263 +1,190 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
 <title>Alex Yachting Solutions</title>
 
-<style>
-body {
-    margin: 0;
-    font-family: 'Helvetica Neue', Arial, sans-serif;
-    background: #ffffff;
-    color: #0b1c2c;
-}
+<script src="https://cdn.tailwindcss.com"></script>
 
-/* HERO */
-.hero {
-    height: 80vh;
-    background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.65)),
-                url('hero.jpg') center/cover no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-    color: white;
+<script>
+tailwind.config = {
+  theme: {
+    extend: {
+      colors: {
+        navy: "#0b1c2c",
+        blue: "#2c5d87",
+        light: "#f4f8fc"
+      }
+    }
+  }
 }
+</script>
 
-.hero h1 {
-    font-size: 46px;
-    margin: 0;
-    letter-spacing: 1px;
-}
-
-.tagline {
-    font-size: 20px;
-    margin-top: 10px;
-    color: #cfe6ff;
-}
-
-.sub {
-    font-size: 14px;
-    color: #d0dbe6;
-}
-
-.btn {
-    margin-top: 30px;
-    padding: 14px 34px;
-    border: 2px solid white;
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 6px;
-    transition: 0.3s;
-}
-
-.btn:hover {
-    background: white;
-    color: #0b1c2c;
-}
-
-/* SECTIONS */
-section {
-    padding: 70px 20px;
-    text-align: center;
-}
-
-h2 {
-    margin-bottom: 40px;
-    font-size: 28px;
-}
-
-/* SERVICES */
-.services {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-    gap: 25px;
-    max-width: 1100px;
-    margin: auto;
-}
-
-.card {
-    border: 1px solid #e4ecf3;
-    padding: 25px;
-    border-radius: 10px;
-    background: #f9fcff;
-    text-align: left;
-}
-
-.card h3 {
-    margin-bottom: 10px;
-}
-
-.card p {
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-/* GALLERY */
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.gallery img {
-    width: 320px;
-    height: 220px;
-    object-fit: cover;
-    margin: 10px;
-    border-radius: 8px;
-}
-
-/* PREMIUM */
-.premium {
-    background: #0b1c2c;
-    color: white;
-    padding: 70px 20px;
-}
-
-.premium p {
-    max-width: 600px;
-    margin: 10px auto;
-    line-height: 1.6;
-}
-
-/* FOOTER */
-footer {
-    padding: 40px 20px;
-    background: #0b1c2c;
-    color: white;
-    text-align: center;
-}
-</style>
 </head>
 
-<body>
+<body class="bg-white text-gray-800">
+
+<!-- NAV -->
+<header class="sticky top-0 bg-white/90 backdrop-blur border-b z-50">
+  <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+    
+    <h1 class="font-bold text-lg text-navy">Alex Yachting Solutions</h1>
+
+    <nav class="hidden md:flex gap-6 text-sm">
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact" class="bg-blue text-white px-4 py-2 rounded-full">Contact</a>
+    </nav>
+  </div>
+</header>
 
 <!-- HERO -->
-<div class="hero">
-    <h1>ALEX YACHTING SOLUTIONS</h1>
+<section class="py-20 bg-light">
+  <div class="max-w-6xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
 
-    <p class="tagline">Premium Yacht Detailing & Marine Solutions</p>
+    <!-- TEXT -->
+    <div>
+      <h1 class="text-4xl md:text-5xl font-bold text-navy leading-tight">
+        Premium Yacht Detailing & Marine Solutions
+      </h1>
 
-    <p class="sub">Detailing • Fiberglass • Custom Fabrication • Maintenance</p>
+      <p class="mt-4 text-gray-600">
+        Professional detailing, fiberglass repair, and custom marine work 
+        built for performance, durability and high-end finish.
+      </p>
 
-    <a href="https://wa.me/..." class="btn">Get a Quote</a>
-</div>
+      <div class="mt-6 flex gap-4">
+        <a href="https://wa.me/..." class="bg-blue text-white px-6 py-3 rounded-full">Get a Quote</a>
+        <a href="#services" class="border border-blue text-blue px-6 py-3 rounded-full">Services</a>
+      </div>
 
-<!-- SERVICES -->
-<section>
-<h2>Our Services</h2>
+      <div class="mt-6 text-sm text-gray-500">
+        Sunshine Coast • Brisbane • Gold Coast<br>
+        ABN: 84818053903
+      </div>
+    </div>
 
-<div class="services">
+    <!-- IMAGE -->
+    <div>
+      <img src="hero.jpg" class="rounded-xl shadow-lg">
+    </div>
 
-<div class="card">
-<h3>Detailing & Protection</h3>
-<p>
-Full exterior and interior yacht detailing including wash, cut & polish, gelcoat restoration and long-term ceramic protection systems.
-</p>
-</div>
-
-<div class="card">
-<h3>Fiberglass & Gelcoat Repairs</h3>
-<p>
-Professional repair of cracks, chips, osmosis treatment and structural fiberglass work with high-end finishing.
-</p>
-</div>
-
-<div class="card">
-<h3>Custom Fabrication</h3>
-<p>
-Custom marine builds including cabins, seating, storage solutions and bespoke wood & resin components.
-</p>
-</div>
-
-<div class="card">
-<h3>Maintenance & Installations</h3>
-<p>
-Refit support, hardware installation, upgrades and on-site problem solving for all marine systems.
-</p>
-</div>
-
-<div class="card">
-<h3>Teak Care</h3>
-<p>
-Teak cleaning, restoration and sealing to preserve durability and premium appearance.
-</p>
-</div>
-
-<div class="card">
-<h3>Metal & Finishing Work</h3>
-<p>
-Stainless steel polishing, inox restoration and surface finishing for a clean and high-end look.
-</p>
-</div>
-
-<div class="card">
-<h3>Maintenance Packages</h3>
-<p>
-Scheduled yacht care programs ensuring consistent performance, protection and peace of mind.
-</p>
-</div>
-
-<div class="card">
-<h3>Quick Solutions</h3>
-<p>
-Fast-response small jobs with high impact results — ideal for urgent fixes and finishing touches.
-</p>
-</div>
-
-</div>
+  </div>
 </section>
 
-<!-- GALLERY -->
-<section>
-<h2>Selected Work</h2>
+<!-- SERVICES -->
+<section id="services" class="py-20">
+  <div class="max-w-6xl mx-auto px-6 text-center">
 
-<div class="gallery">
-    <img src="photo1.jpg">
-    <img src="photo2.jpg">
-    <img src="photo3.jpg">
-</div>
+    <h2 class="text-3xl font-bold text-navy mb-10">Our Services</h2>
 
+    <div class="grid md:grid-cols-3 gap-8">
+
+      <div class="p-6 border rounded-xl">
+        <h3 class="font-semibold text-blue mb-2">Detailing & Protection</h3>
+        <p class="text-sm text-gray-600">
+          Wash, polish, gelcoat restoration and ceramic protection systems.
+        </p>
+      </div>
+
+      <div class="p-6 border rounded-xl">
+        <h3 class="font-semibold text-blue mb-2">Fiberglass & Repairs</h3>
+        <p class="text-sm text-gray-600">
+          Structural repairs, cracks, osmosis and gelcoat restoration.
+        </p>
+      </div>
+
+      <div class="p-6 border rounded-xl">
+        <h3 class="font-semibold text-blue mb-2">Custom Fabrication</h3>
+        <p class="text-sm text-gray-600">
+          Cabins, seating, storage and resin builds.
+        </p>
+      </div>
+
+      <div class="p-6 border rounded-xl">
+        <h3 class="font-semibold text-blue mb-2">Maintenance & Install</h3>
+        <p class="text-sm text-gray-600">
+          Refits, upgrades, installations and yacht support.
+        </p>
+      </div>
+
+      <div class="p-6 border rounded-xl">
+        <h3 class="font-semibold text-blue mb-2">Teak Care</h3>
+        <p class="text-sm text-gray-600">
+          Cleaning, restoration and sealing.
+        </p>
+      </div>
+
+      <div class="p-6 border rounded-xl">
+        <h3 class="font-semibold text-blue mb-2">Metal Work</h3>
+        <p class="text-sm text-gray-600">
+          Stainless polishing and inox finishing.
+        </p>
+      </div>
+
+    </div>
+  </div>
 </section>
 
 <!-- PREMIUM PRODUCTS -->
-<section class="premium">
-<h2>Premium Products Only</h2>
+<section class="py-20 bg-navy text-white text-center">
+  <div class="max-w-3xl mx-auto px-6">
 
-<p>
-We work exclusively with industry-leading marine systems to guarantee durability and top-level finishes.
-</p>
+    <h2 class="text-3xl font-bold mb-6">Premium Products Only</h2>
 
-<p>
-Awlgrip (Full Coating System) • International Marine Coatings • 3M Professional Marine Range
-</p>
+    <p class="text-gray-300 mb-4">
+      We use only top-tier marine systems:
+    </p>
 
-<p>
-Using only proven products ensures long-lasting protection, resistance to harsh marine environments and a superior final result.
-</p>
+    <p class="font-semibold text-white">
+      Awlgrip • International • 3M
+    </p>
+
+    <p class="text-gray-400 mt-4">
+      Ensuring durability, protection and high-end finishes in all conditions.
+    </p>
+
+  </div>
 </section>
 
 <!-- PROJECTS -->
-<section>
-<h2>Big Projects 2025 / 2026</h2>
+<section id="projects" class="py-20 text-center">
+  <div class="max-w-4xl mx-auto px-6">
 
-<p>
-Currently involved in large-scale yacht refit and maintenance projects across international waters.
-</p>
+    <h2 class="text-3xl font-bold text-navy mb-6">Projects 2025 / 2026</h2>
 
-<p><em>Full portfolio coming soon.</em></p>
+    <p class="text-gray-600">
+      Currently working on large-scale yacht refit and detailing projects across international waters.
+    </p>
+
+    <p class="mt-3 text-gray-400 italic">Full portfolio coming soon.</p>
+
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-20 bg-light text-center">
+  <div class="max-w-xl mx-auto px-6">
+
+    <h2 class="text-3xl font-bold text-navy mb-4">Get a Quote</h2>
+
+    <p class="text-gray-600 mb-6">
+      Contact directly for pricing, availability or urgent jobs.
+    </p>
+
+    <a href="https://wa.me/ "+61484246614" class="bg-blue text-white px-8 py-4 rounded-full text-lg">
+      WhatsApp
+    </a>
+
+  </div>
 </section>
 
 <!-- FOOTER -->
-<footer>
-<p>Sunshine Coast • Brisbane • Gold Coast</p>
-<p>ABN: 84818053903</p>
-<p>Alex Yachting Solutions</p>
+<footer class="bg-navy text-white py-10 text-center">
+  <p>Sunshine Coast • Brisbane • Gold Coast</p>
+  <p>ABN: 84818053903</p>
+  <p class="text-gray-400 mt-2">Alex Yachting Solutions</p>
 </footer>
 
 </body>
